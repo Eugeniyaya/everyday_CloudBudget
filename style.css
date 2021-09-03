@@ -167,7 +167,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-height: 642px;
+    /* min-height: 642px; */
     margin-top: 140px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -250,7 +250,7 @@
     text-align: justify;
     cursor: pointer;
     text-decoration: none;
-    padding-top: 23px;
+    margin-top: 23px;
 }
 .software__link:hover {
     text-decoration: underline;
@@ -672,6 +672,9 @@
             -ms-flex-pack: center;
                 justify-content: center;
     }
+    .main__heading {
+        padding-top: 190px;
+    }
 }
 @media (max-width: 768px) {
     .header__nav {
@@ -689,6 +692,7 @@
     .logo__icon {
         padding-right: 6px;
     }
+    
     .software {
         padding-top: 0px;
         -ms-flex-pack: distribute;
@@ -763,7 +767,18 @@
         padding-left: 0;
     }
 }
+@media (max-width: 540px) {
+    .main__heading {
+        font-size: 60px;
+    }
+}
+@media (max-width: 414px) {
+    .main {
+        margin-top: -266px;
+    }
+}
 @media (max-width: 425px) {
+
     .header {
         padding-top: 20px;
     }
@@ -788,11 +803,14 @@
         margin-top: -266px;
     }
     .wrapper_main {
-        margin-top: 270px;
+        box-sizing: border-box;
+        padding-top: 50px;
     }
     .main__heading {
         font-size: 45px;
         line-height: 70px;
+        padding-bottom: 10px;
+        padding-top: 140px;
     }
     .main__text {
         font-size: 21px;
@@ -828,14 +846,30 @@
     .footer__column {
         padding-top: 50px;
     }
+    .main__button {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 375px) {
+    .main {
+        margin-top: -266px;
+    }
 }
 @media (max-width: 320px) {
     .nav__link {
         padding: 5px 0px;
     }
+    .wrapper_main {
+        margin-top: 0px;
+        padding-top: 100px;
+    }
     .main__heading {
         font-size: 30px;
         line-height: 60px;
+        /* padding-bottom: 30px; */
+    }
+    .main__text {
+        padding-bottom: 10px;
     }
     .feature__info {
         left: 14px;
@@ -845,5 +879,8 @@
     }
     .wrapper_contacts {
         padding-top: 60px;
-    }
+    }   
+    .main {
+        margin-top: -215px;
+    } 
  }
